@@ -12,23 +12,20 @@ export class Card {
 export interface ICardProperty {
     Card:Card;
 }
-export interface ICardState {
-    Card:Card;
-}
-export class CardComponent extends Component<ICardProperty, ICardState> {
+
+export class CardComponent extends Component<ICardProperty> {
     constructor(props:ICardProperty) {
         super(props);
-        this.state = {Card:props.Card};
     }
     render() {
         return (
             <div className="col-4">
                 <div className='card'>
-                    <img className='card-image-top' src={this.state.Card.imageUrl} alt={this.state.Card.name}/>
-                    <div className='card-header'>{this.state.Card.name}<br/>({this.state.Card.setName})</div>
+                    <img className='card-image-top' src={this.props.Card.imageUrl} alt={this.props.Card.name}/>
+                    <div className='card-header'>{this.props.Card.name}<br/>({this.props.Card.setName})</div>
                     <div className='card-body'>
-                        <p>{this.state.Card.type}</p>
-                        <p>{this.state.Card.text}</p>
+                        <p>{this.props.Card.type}</p>
+                        <p>{this.props.Card.text}</p>
                     </div>
                 </div>
             </div>

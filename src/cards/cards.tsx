@@ -4,9 +4,7 @@ import { Card, CardComponent } from "./card";
 export interface ICardsProperty {
     Cards:Card[];
 }
-export interface ICardsState {
-    Cards:Card[];
-}
+
 export class CardsComponent extends Component<ICardsProperty> {
     constructor(props:ICardsProperty){
         super(props);
