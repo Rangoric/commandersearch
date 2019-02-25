@@ -2,6 +2,7 @@
   "name": "commandersearch",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://rangoric.github.io/commandersearch",
   "dependencies": {
     "@types/jest": "24.0.6",
     "@types/node": "11.9.5",
