@@ -53,7 +53,7 @@ export class SearchStore extends Component<{}, SearchData> {
         this.setState({Criteria:{...this.state.Criteria, [targetName]:targetValue}});
     }
     clearCriteria() {
-        this.setState({Criteria:new SearchCriteria()});
+        this.setState({Criteria:new SearchCriteria(), Results:[]});
     }
     render() {
         return (
