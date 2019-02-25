@@ -8,6 +8,7 @@ export const EmptyResults =
             When making a commander deck, I usually have in mind the cards I want to use, or at least know what keywords I would want to be using.
             This search is set up to make that easy.
         </p>
+        <p>Currently there are no results that match, or a search hasn't been started.</p>
         <p>
             A few sample searches:
         </p>

@@ -11,8 +11,10 @@ export class CardsComponent extends Component<ICardsProperty> {
     }
     render() {
         return (
-            <div className='row'>
-                {this.props.Cards.map(t => (<CardComponent Card={t} key={t.id}/>))}
+            <div>
+                <div className='row'>
+                    {this.props.Cards.map(t => (<CardComponent Card={t} key={t.id}/>))}
+                </div>
             </div>
         );
     }

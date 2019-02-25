@@ -9,6 +9,8 @@ export class SearchResultsComponent extends Component {
             <SearchContext.Consumer>
                 {({SearchData}) => (
                     <div>
+                        <h4>Search Results:</h4>
+
                         {SearchData.Results.length ? <CardsComponent Cards={SearchData.Results}/> : EmptyResults}
                     </div>
                 )}

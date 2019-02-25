@@ -18,7 +18,7 @@ export class SearchCriteriaComponent extends Component {
     render() {
         return (
             <div>
-                <p>Search Criteria</p>
+                <h4>Search Criteria</h4>
                 <SearchContext.Consumer>
                     { ({SearchData, refreshResults, onCriteriaChange, clearCriteria}) => (
                         <div>
